@@ -1,0 +1,227 @@
+  body
+            {
+                margin:50px;
+                background-color:gray;
+            }
+            .heading
+            {
+                background-color:black;
+                color:white;
+                font-family:arial;
+                border:1px solid black;
+                border-radius:60px;
+                font-size:30px;
+                display:flex;
+                justify-content:space-around;
+                flex-wrap:wrap;
+                margin:30px;
+            }
+            .home:hover
+            {
+                border-bottom:5px solid green;
+                border-collapse:collapse;
+                color:yellow;
+                background-color:red;
+                padding:2px;
+               transition:1s;
+            }
+            .expenses:hover
+            {
+                border-bottom:5px solid orange;
+                border-collapse:collapse;
+                color:black;
+                background-color:white;
+                transition:1s;
+            }
+            .summary:hover
+            {
+                border-bottom:5px solid red;
+                border-collapse:collapse;
+                color:red;
+                background-color:yellow;
+               transition:1s;
+            }
+            .about:hover
+            {
+                border-bottom:5px solid white;
+                border-collapse:collapse;
+                color:blue;
+                background-color:pink;
+                transition:1s;
+            }
+            .add
+            {
+               
+                background-color:azure;
+                padding:10px;
+                border:3px solid green;
+                display:flex;
+                justify-content:start;
+                gap:50px;
+                flex-wrap:wrap;
+                width:50%;
+                margin:auto;
+                border-radius:5%;
+                
+               
+            }
+            .head:hover
+            {
+                color:red;
+                background-color:pink;
+                transition:1s;
+            }
+            .re{
+                border:1px solid orange;
+                 margin-left:0;
+                 width:100%;
+                 padding:10px;
+                 background-color:white;;
+                padding:10px;
+                margin-top:5%;
+                 position:relative;
+                
+            }
+           th
+           {
+            color:red;
+            background-color:yellow;
+            font-family:'arial';
+            font-size:20px;
+            padding:10px;
+            text-align:center;
+            font-weight:200;
+           }
+           td
+           {
+            color:aqua;
+            background-color:violet;
+            font-family:arial;
+            font-size:18px;
+            text-align:center;
+           }
+           table
+           {
+            width:100%;
+            position:sticky;
+           }
+            .total
+            {
+                border:1px solid green;
+                margin-top:2%;
+                background-color:lightgreen;
+                font-family:arial;
+                display:flex;
+                justify-content:space-around;
+                padding:5%;
+                position:relative;
+            }
+            .price
+            {
+                border:1px solid black;
+                width:15%;
+                border-radius:15%;
+                text-align:center;
+                background-color:pink;
+            }
+            .exp
+            {
+                border:1px solid black;
+                width:15%;
+                text-align:center;
+                background-color:pink;
+                border-radius:15%;
+            }
+            .month
+            {
+                border:1px solid black;
+                width:15%;
+                text-align:center;
+                background-color:pink;
+                border-radius:15%;
+            }
+            .trans
+            {
+                 border:1px solid black;
+                width:15%;
+                text-align:center;
+                background-color:pink;
+                border-radius:15%;
+            }
+            .footer,ul,li
+            {
+                background-color:black;
+                border-radius:40px;
+                color:white;
+                margin-top:5%;
+                 position:relative;
+                 font-family:arial;
+                 display:flex;
+                 gap:20px;
+                 flex-wrap:nowrap;
+                justify-content:space-around;
+            }
+            li
+            {
+                list-style-type:none;
+            }
+           .btn
+           {
+            background-color:blue;
+            color:white;
+            font-family: arial;
+            text-align:center;
+           }
+           .box:hover
+           {
+            color:green;
+            background-color:orange;
+           }
+           .button:hover
+           {
+            color:aqua;
+            background-color:black;
+            cursor:pointer;
+           }
+           td:hover
+           {
+            color:green;
+            background-color:brown;
+            font-size:25px;
+           }
+           .ser
+          {
+            border:1px solid aqua;
+            margin:10px;
+            background-color:bisque;
+            padding:20px;
+             display:flex;
+            justify-content:space-around;
+            position:relative;
+          }
+          .fo
+          {
+            border:1px solid green;
+            padding:15px;
+             background-color:beige;
+             width:75%;
+             text-align:center;
+             border-radius:50px;
+             align-self:center;
+            
+             
+          }
+          .ser1
+          {
+            position:absolute;
+            right:0;
+            
+          }
+          
+          .ser:hover
+          {
+            color:red;
+            background-color:yellow;
+            cursor:pointer;
+          }
+         

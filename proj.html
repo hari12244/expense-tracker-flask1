@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='proj1.css') }}">
+        <script>
+            function statues()
+            {
+                alert("Delete Succssfully");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="heading">
+            <div>💰 Expense Tracker  </div>
+            <div class="home">Home</div>
+            <div class="expenses">Expenses</div>
+            <div class="summary">Summary</div>
+            <div class="about">About</div>
+        </div>
+        <div class="add">
+            <div class="head">➕  Add Expense</div>
+            <div class="form">
+            <form method="post" action="/">
+                <h3>Expense Name</h3>
+                <input type="text" name="ename" placeholder="Enter expense name">
+                 <h3>Amount</h3>
+                <input type="number" name="amount" placeholder="Enter amount">
+                 <h3>Category</h3>
+               <select name="category">
+                <option value="Food">🍔 Food</option>
+                <option value="Travel">🚗 Travel</option>
+                <option value="Movie">🎬 Movie</option>
+                <option value="Shopping">🛍️ Shopping</option>
+               </select><br><br>
+               <input type="date" name="date"><br><br>
+                 <button name="add" type="submit" class="btn">➕ Add Expense</button>
+            </form>
+            </div>
+        </div>
+         <div class="total">
+            <div class="price">
+            <h4>💰</h4>
+            <h4>Total Balance</h4>
+            <h4>₹{{total}}</h4>
+            </div>
+            <div class="exp">
+               <h4>📉 </h4>
+            <h4>Total Expenses</h4>
+            <h4>₹{{total}}</h4>  
+            </div>
+            <div class="month">
+            <h4>📅</h4>
+            <h4>This Month</h4>
+            <h4>₹{{total}}</h4>
+            </div>
+            <div class="trans">
+            <h4>📋</h4>
+            <h4>Total Transaction</h4>
+            <h4>{{tran}}</h4>
+            </div>
+        </div>
+        <div class="ser">
+            <div class="fo">
+            <form method="post" action="/search">
+                <input type="text" placeholder="🔎search by expense name..." name="ser">
+            <button class="ser1" type="submit" style="border-radius:10px; width:100px; color:white;background-color:red;">Search</button>
+            </form>
+            </div>
+        </div>
+        <div class="re">
+             <table border="1px">
+            <div class="box">
+                <tr>
+                    <th>ID</th>
+                    <th>Expense Name</th>
+                    <th>Amount(₹)</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+                <tr>
+                      {% for d in da %}
+                    <td>{{d.id}}</td>
+                    <td>{{d.ename}}</td>
+                    <td>{{d.amount}}</td>
+                    <td>{{d.category}}</td>
+                    <td>{{d.date}}</td>
+                    <td> <a href='/delete/{{d.id}}'><button class="button" type="button" onclick=statues() value="Delete" style="color:yellow; background-color:orange;font-family:arial;padding:10px;margin:5px;border-radius:25px;">🗑 Delete</button><br></a></td>
+                <td><a href="/update/{{d.id}}"><button class="button" type="button" value="update" style="color:blue; background-color:pink;font-family:arial;padding:10px;margin:5px;border-radius:25px">✏️ update</button></a></td>
+                </tr>
+                {% endfor %}
+            </table>
+            </div>
+            
+            
+        </div>
+        <div class="footer">
+           
+            <ul>
+                <li>💰 Expense Tracker</li>
+                <li> 📅 Daily Records</li>
+                <li>📋 Transactions </li>
+                <li>🚀 Created by Hari</li>
+            </ul>
+        </div>
+    </body>
+</html>
